@@ -26,7 +26,7 @@ def analyze_sentiment(request):
         text = request.POST.get('text')
 
         # Đọc dữ liệu
-        data = pd.read_csv(r"/Users/nguyenngocbaotram/Documents/HM&UD/LAB2-MachineLearning/Data/Education.csv")
+        data = pd.read_csv(r"/Users/nguyenngocbaotram/Documents/HM&UD/LAB2-MachineLearning/LAB2-MachineLearning/Data/Education.csv")
         X = data['Text']
         y = data['Label'].map({'positive': 1, 'negative': 0})
 
