@@ -1,0 +1,22 @@
+<!-- lab2/templates/lab2/result.html -->
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kết quả Phân Tích Tâm Trạng</title>
+</head>
+<body>
+    <h1>Kết quả Phân Tích Tâm Trạng</h1>
+
+    <h2>Độ chính xác của Bernoulli Naive Bayes: {{ results.bernoulli_accuracy }}</h2>
+    <h3>Báo cáo phân loại của Bernoulli Naive Bayes:</h3>
+    <pre>{{ results.bernoulli_report }}</pre>
+
+    <h2>Độ chính xác của Multinomial Naive Bayes: {{ results.multinomial_accuracy }}</h2>
+    <h3>Báo cáo phân loại của Multinomial Naive Bayes:</h3>
+    <pre>{{ results.multinomial_report }}</pre>
+    
+    <a href="{% url 'analyze_sentiment' %}">Trở lại</a>
+</body>
+</html>
